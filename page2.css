@@ -1,0 +1,158 @@
+/* Resetando margens e paddings e definindo uma fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho do perfil */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ff005c;
+    color: white;
+}
+
+/* Perfil de usuário com imagem */
+.user-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Container principal para o perfil de match */
+.match-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo para o cartão do perfil */
+.match-profile {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Foto do match */
+.match-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os botões de interação */
+.interaction-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover nos botões */
+.interaction-buttons button:hover {
+    opacity: 0.9;
+}
+
+/* Cores para os botões de interação */
+.interaction-buttons button:nth-child(1) {
+    background-color: #ff4b4b;
+    color: white;
+}
+
+.interaction-buttons button:nth-child(2) {
+    background-color: #4caf50;
+    color: white;
+}
+
+.interaction-buttons button:nth-child(3) {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Estilo da parte esquerda da navbar (perfil do usuário) */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilo do título centralizado na navbar */
+.nav-center .app-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+/* Estilo da parte direita da navbar (botão de "Casais que deram certo") */
+.nav-right {
+    top: center;
+    left: 10px;
+}
+
+/* Botão de "Casais que deram certo" */
+.success-couples {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover no botão de "Casais que deram certo" */
+.success-couples:hover {
+    background-color: #ffc600;
+}
+
+/* Garantir que a navbar não sobreponha o conteúdo */
+body {
+    padding-top: 60px; /* Aumenta o padding no topo para compensar a navbar */
+}
+
+/* Layout para links de navegação */
+.navbar div {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo da seção de vídeos do Casais que Deram Certo */
+.video-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

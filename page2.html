@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder 2</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <img src="perfil.jfif" alt="User Profile" class="user-profile">
+                <h1 class="username">Gabriel Alves</h1>
+            </div>
+            <div class="nav-center">
+                <h1 class="app-title">TINDER 2</h1>
+            </div>
+            <div class="nav-right">
+                <button class="success-couples" onclick="goToCouplesPage()">Casais que deram certo</button>
+            </div>
+        </nav>
+    </header>
+    <main class="match-container">
+        <div class="match-profile">
+            <img src="" alt="" class="match-photo">
+            <h2 class="match-name"></h2>
+            <p class="match-status"></p>
+            <p class="match-sexo"></p>
+            <p class="match-interests"></p>
+            <p class="match-description"></p>
+            <div class="interaction-buttons">
+                <button onclick="passMatch()">Não 💔</button>
+                <button onclick="likeMatch()">Curtir ❤</button>
+                <button onclick="nextPhoto()">Próxima foto</button>
+            </div>
+        </div>
+    </main>
+    <script src="page2.js"></script>
+</body>
+</html>

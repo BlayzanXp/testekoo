@@ -1,0 +1,234 @@
+/* Definições globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;  /* Fundo branco para a página */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* A altura deve preencher a tela toda */
+}
+/* Contorno do celular */
+.celular-com-sombra {
+    width: 280px;  /* Diminuindo o tamanho do celular */
+    height: 500px; /* Ajustando a altura */
+    background-color: #ccc;  /* Fundo cinza para o celular */
+    border-radius: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estilo para a tela do celular */
+.tela {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #fff;  /* Fundo branco para a tela interna do celular */
+    border-radius: 30px;
+}
+
+/* Estilo para os ícones dos apps */
+.apps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    justify-items: center;
+    overflow: hidden;
+
+}
+
+.app-logo {
+    width: 50px;  /* Diminuindo o tamanho da logo dos apps */
+    height: 50px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.app p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1;
+
+}
+
+/* Estilo para a barra inferior */
+.barra-inferior {
+    padding: 10px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-branco {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Garantir que os botões ocupem todo o espaço disponível */
+}
+
+.botao-branco:hover {
+    background-color: #ddd;
+}
+
+
+/* INDEX */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+/* Página inicial (index.html) */
+.index-container {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.index-container h1 {
+    font-size: 3em;
+    color: #ffd700;
+}
+
+.index-container p {
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+/* Estilos da Página 2 (page2.html) */
+.page2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.page2-container h1 {
+    font-size: 2.5em;
+    color: #ffd700;
+}
+
+.page2-container p {
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+.page2-container .profile-card {
+    background-color: #111;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.page2-container .profile-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.page2-container .profile-card h3 {
+    font-size: 1.5em;
+    color: #ffd700;
+}
+
+.page2-container .profile-card p {
+    color: #aaa;
+}
+
+/* Estilos da Calculadora */
+body.cal {
+    justify-content: center;
+    background-color: #000;
+}
+
+.calculator {
+    width: 400px;
+    height: 500px;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #000;
+    color: #ffd700;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    height: 380px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 20px;
+    border: none;
+    background: #ffd700;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+button:hover {
+    background: #ffc400;
+}
+
+.clear {
+    background: #ff3b3b;
+    color: #fff;
+}
+
+.equal {
+    background: #28a745;
+    color: #fff;
+}
+
+button:nth-child(4n) {
+    background: #ffa500;
+    background: #ffa500; /* Botões de operações */
+    color: #fff;
+}
